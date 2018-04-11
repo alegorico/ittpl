@@ -1,4 +1,6 @@
 # Arquitectura de triangulación invertida para el mantenimiento de framework de gestión de plantillas xml/html 
+
+![modelo del triangulo invertido][1]
 	
 **Settings** – usado por el preprocesador, contiene: variables, definiciones, etc.\
 **Tools** – _mixins_ y funciones.\
@@ -8,4 +10,4 @@
 **Components** – incluye los fragmentos y componentes estáticos de la vista a generar.\
 **Utilities** – utilidades y _helpers_ con la habilidad sobrescribir la plantilla y darle los últimos toques.
 
-[1]:https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+[1]:https://www.xfivecdn.com/xfive/wp-content/uploads/2016/02/01083650/itcss-layers2.svg
