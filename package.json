@@ -1,0 +1,11 @@
+{
+  "name": "ittpl",
+  "version": "0.0.1",
+  "description": "Modelo base para la generacion de vistas basada en la filosofia ITCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro G.",
+  "license": "CC-BY-2.0"
+}
