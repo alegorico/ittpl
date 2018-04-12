@@ -17,12 +17,13 @@ module.exports = function(grunt) {
 		pug: {
 			compile: {
 				options: {
+					pretty: true,
 					data: {
-						debug: true
+						debug: false,
+						env: 'desarrollo'
 					}
 				},
-			  files: getFiles('assets/templates', 'build/html', '**/*.pug' )
-			  
+				files: getFiles('assets/templates', 'build/html', '**/*.pug' )
 			}
 		  }
 	});
