@@ -1,0 +1,9 @@
+// integramos las variables y los mixer para uso posterior (desarrollo) 
+case env
+    when 'produccion'
+        include ../settings/_variables.produccion.pug
+    when 'desarrollo'
+        include ../settings/_variables.desarrollo.pug
+
+
+include ../tools/_mixins.genericas.pug

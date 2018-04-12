@@ -1,0 +1,11 @@
+doctype html
+include ../generics/_entorno.pug
+
+html
+  head
+    title #{entorno}    
+    block linkeos
+  body
+    block articulo
+
+    +list(entorno, 1,2,3,4)
