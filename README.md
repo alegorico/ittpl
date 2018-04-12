@@ -1,13 +1,10 @@
 # Arquitectura de triangulación invertida para el mantenimiento de framework de gestión de plantillas xml/html 
 
-![modelo del triangulo invertido][1]
-	
-**Settings** – usado por el preprocesador, contiene: variables, definiciones, etc.\
+**Settings** – contiene: variables, definiciones, etc.\
 **Tools** – _mixins_ y funciones.\
-**Generic** – _reset_ y/o normalizado de resultados. Es una capa intermedia de propósito general donde utilizamos los tools y setting y los combinamos.\
-**Elements** – definen los bloques centrales. Estos luego serán los padres de los elementos de las capas posteriores.\
-**Objects** – aquí se definen los elementos generales como las etiquetas metas, script, link, etc. y algunos otros elementos aislados no pertenecientes a la capa anterior.\
-**Components** – incluye los fragmentos y componentes estáticos de la vista a generar.\
+**Generic** – es una capa intermedia de propósito general donde integramos plantillas de terceros y unificamos los _tools_ y _setting_ que serán utilizados en las otras capas.\
+**Skeleton** - es la capa base a donde se irán introduciendo los distintos elementos definidos en los próximos apartados.\
+**Template** – aquí se definen los bloques que forman parte de los requerimientos del esqueleto. Esta capa representaría cada uno de los posibles templetes del sistema. Utilizando un sistema de inyección el esqueleto se va llenando con cada uno de los bloques informados en cada templete.\
+**Objects** – aquí se definen los _objetos genéricos_ como las etiquetas metas, script, link, etc. y algunos otros elementos aislados no pertenecientes a la capa anterior.\
+**Components** – incluye los fragmentos y componentes estáticos de la vista a generar, utilizados en funciones de la capa utilities.\
 **Utilities** – utilidades y _helpers_ con la habilidad sobrescribir la plantilla y darle los últimos toques.
-
-[1]:https://www.xfivecdn.com/xfive/wp-content/uploads/2016/02/01083650/itcss-layers2.svg
