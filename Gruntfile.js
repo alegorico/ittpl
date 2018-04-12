@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
 		grunt.file.expand({cwd: srcdir}, wildcard).forEach(function(relpath) {
 			// eliminamos el _tpl. y .pug
-			files[path.join(destdir, relpath.replace(/(_tpl.)/i,"").replace(/.pug/,"")) + ".html"] = path.join(srcdir, relpath);
+			files[path.join(destdir, relpath.replace(/(_tpl.)/i,"").replace(/.pug/i,"")) + ".html"] = path.join(srcdir, relpath);
 		});
 
 		return files;
