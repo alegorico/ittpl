@@ -2,21 +2,31 @@
 
 module.exports = function(grunt) {
 
-  grunt.initConfig({
-    pug: {
-        compile: {
-          options: {
-            data: {
-              debug: true
-            }
-          },
-          files: {
-            'build/html/articulo.html': 'assets/templates/*.pug'
-          }
-        }
-      }
-  });
+	function getFiles(srcdir, destdir, wildcard) {
+		var path = require('path');
+		var files = {};
 
-grunt.loadNpmTasks('grunt-contrib-pug');
+		grunt.file.expand({cwd: srcdir}, wildcard).forEach(function(relpath) {
+			files[path.join(destdir, relpath)] = path.join(srcdir, relpath);
+		});
+
+		return files;
+	};
+
+	grunt.initConfig({
+		pug: {
+			compile: {
+				options: {
+					data: {
+						debug: true
+					}
+				},
+			  files: getFiles('assets/templates', 'build/html', '**/*.pug' )
+			  
+			}
+		  }
+	});
+
+	grunt.loadNpmTasks('grunt-contrib-pug');
 
 };
