@@ -7,7 +7,8 @@ module.exports = function(grunt) {
 		var files = {};
 
 		grunt.file.expand({cwd: srcdir}, wildcard).forEach(function(relpath) {
-			files[path.join(destdir, relpath)] = path.join(srcdir, relpath);
+			// eliminamos el _tpl. y .pug
+			files[path.join(destdir, relpath.replace(/(_tpl.)/i,"").replace(/.pug/,"")) + ".html"] = path.join(srcdir, relpath);
 		});
 
 		return files;
@@ -20,10 +21,10 @@ module.exports = function(grunt) {
 					pretty: true,
 					data: {
 						debug: false,
-						env: 'desarrollo'
+						env: 'produccion'
 					}
 				},
-				files: getFiles('assets/templates', 'build/html', '**/*.pug' )
+				files: getFiles('assets/html/templates', 'build/html', '**/*.pug' )
 			}
 		  }
 	});
