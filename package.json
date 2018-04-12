@@ -9,8 +9,11 @@
   "author": "Alejandro G.",
   "license": "CC-BY-2.0",
   "devDependencies": {
-    "pug": "^2.0.3",
     "grunt": "^1.0.2",
     "grunt-contrib-pug": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alegorico/ittpl.git"
   }
 }

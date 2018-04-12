@@ -1,5 +1,22 @@
 'use strict';
 
 module.exports = function(grunt) {
-	//Do grunt-related things in here
+
+  grunt.initConfig({
+    pug: {
+        compile: {
+          options: {
+            data: {
+              debug: true
+            }
+          },
+          files: {
+            'build/html/articulo.html': 'assets/templates/*.pug'
+          }
+        }
+      }
+  });
+
+grunt.loadNpmTasks('grunt-contrib-pug');
+
 };
