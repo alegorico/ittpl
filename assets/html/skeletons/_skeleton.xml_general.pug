@@ -1,10 +1,6 @@
 doctype xml
 include ../generics/_entorno.pug
 
-html
-  head
-    title #{entorno}    
-  body
+xml
+    entorno #{entorno}
     block articulo
-
-    +list(entorno, 1,2,3,4)
