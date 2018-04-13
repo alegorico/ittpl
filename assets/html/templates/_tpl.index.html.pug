@@ -1,0 +1,25 @@
+extends ../skeletons/_skeleton.html_sass.pug
+
+block linkeos
+    include ../objects/_object.head_sass.pug
+
+block articulo
+    h1 Football Radar CSS
+    div(class="o-layout  o-layout--large  o-layout--middle")
+
+        +bloque_1("o-layout__item  u-1/1  u-1/2@sm  u-1/4@md  u-1/3@lg", 1)
+        +bloque_1("o-layout__item  u-1/1  u-1/2@sm  u-1/4@md  u-1/3@lg", 2)
+        +bloque_1("o-layout__item  u-1/2  u-1/2@sm  u-1/4@md  u-1/3@lg", 3)
+        +bloque_1("o-layout__item  u-1/2  u-1/2@sm  u-1/4@md  u-1/1@lg", 4) 
+
+        +bloque_2("c-btn--small", 1)
+        +bloque_2("", 2)
+        +bloque_2("", 3)
+        +bloque_2("c-btn--large", 4)
+
+        +lista_enumerada("o-layout__item  u-1/1  u-1/2@md")
+        +lista_enumerada_i("o-layout__item  u-1/1  u-1/2@md")
+
+        include ../objects/_object.constante_sass.pug
+        include ../objects/_object.constante_sass.pug
+    

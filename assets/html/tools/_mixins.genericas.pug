@@ -2,3 +2,34 @@ mixin list(id, ...items)
   ul(id=id)
     each item in items
       li= item
+
+mixin lista_enumerada(clase)
+  div(class=clase)
+    h1 Heading one
+    h2 Heading two
+    h3 Heading three
+    h4 Heading four
+    h5 Heading five
+    h6 Heading six
+
+mixin lista_enumerada_i(clase)
+  div(class=clase)
+    h1(class="u-h6") Heading one
+    h2(class="u-h5") Heading two
+    h3(class="u-h4") Heading three
+    h4(class="u-h3") Heading four
+    h5(class="u-h2") Heading five
+    h6(class="u-h1") Heading six
+
+
+
+
+mixin bloque_1(clase, num)
+  div(class=clase)
+    p.c-layout-demo Grid Item #{num}
+
+mixin bloque_2(clase, num)
+  div(class="o-layout__item  u-1/1  u-1/2@sm  u-1/4@md")
+    p 
+      a(href="#0", class="c-btn  c-btn--full " + clase) Button #{num}
+  
