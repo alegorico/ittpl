@@ -33,10 +33,14 @@ module.exports = function(grunt) {
 				'build/css/main.css': 'assets/css/main.scss'
 			  }
 			}
-		  }
+		},
+		clean: {
+			build: 'build'
+	  	}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-pug');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
 };
