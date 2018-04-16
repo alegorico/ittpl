@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 						env: (process.env =='produccion') ? 'produccion' :'desarrollo'
 					}
 				},
-				files: getFiles('assets/html/templates', 'build/html', '**/*.pug' )
+				files: getFiles('assets/html', 'build', '*.pug' )
 			}
 		  }
 	});
