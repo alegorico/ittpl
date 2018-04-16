@@ -1,6 +1,6 @@
-# Arquitectura de triangulación invertida para el mantenimiento de framework de gestión de plantillas xml/html 
+# Herramienta automatizada para la creacion de xml/html, partiendo de plantillas previamente estructuradas
 
-Framework de creación generica de html/xml partiendo de plantillas previamente definidas. También se a incluido acceso al framework de compilado de css de plantillas sass [Más info](https://github.com/alegorico/forkfrcss)
+Utilería de creación generica de html/xml, se utiliza para ello plantillas previamente definidas. También se a incluido acceso al framework de compilado de css de plantillas sass segun el modelo ITCSS [Más info](https://github.com/alegorico/forkfrcss)
 
 ### Clonación del repo
 ```shell
