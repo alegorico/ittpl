@@ -103,6 +103,9 @@ typings/
 # dotenv environment variables file
 .env
 
+### Sass ###
+.sass-cache/
+*.css.map
 
 ### Windows ###
 # Windows thumbnail cache files
