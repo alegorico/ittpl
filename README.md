@@ -2,21 +2,24 @@
 
 Framework de creación generica de html/xml partiendo de plantillas previamente definidas. También se a incluido acceso al framework de compilado de css de plantillas sass [Más info](https://github.com/alegorico/forkfrcss)
 
-### Clonacion del repo
+### Clonación del repo
 ```shell
     git clone --recurse-submodules https://github.com/alegorico/ittpl.git
 ```
 
-### Instalacion 
+### Instalación 
 ```js
    npm install 
 ```
 
-### Comandos basicos
+### Comandos básicos
 ```js
+    grunt clean // limpia el directorio de compilacion
     grunt pug // compila los html
     grunt sass // compila el css general
-    grunt clean // limpia el directorio de trabajo
+    
+    // ejecutarlos todo a la vez
+    grunt
 ```
 
 ### Directorios de trabajo para html/xml
