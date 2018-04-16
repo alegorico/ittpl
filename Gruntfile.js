@@ -26,9 +26,17 @@ module.exports = function(grunt) {
 				},
 				files: getFiles('assets/html', 'build', '*.pug' )
 			}
+		},
+		sass: {
+			dist: {
+			  files: {
+				'build/css/main.css': 'assets/css/main.scss'
+			  }
+			}
 		  }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-pug');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
 };
