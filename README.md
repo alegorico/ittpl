@@ -1,4 +1,5 @@
 # Herramienta automatizada para la creacion de xml/html, partiendo de plantillas previamente estructuradas
+[![Build Status](https://travis-ci.org/alegorico/ittpl.svg?branch=master)](https://travis-ci.org/alegorico/ittpl)
 
 Utilería de creación generica de html/xml, se utiliza para ello plantillas previamente definidas. También se a incluido acceso al framework de compilado de css de plantillas sass segun el modelo ITCSS [Más info](https://github.com/alegorico/forkfrcss)
 
