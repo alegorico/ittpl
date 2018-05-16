@@ -7,6 +7,9 @@ Utilería de creación generica de html/xml, se utiliza para ello plantillas pre
 ### Clonación del repo
 ```shell
     git clone --recurse-submodules https://github.com/alegorico/ittpl.git
+    
+    # tambien esta disponible via bower 
+    # bower info ittpl
 ```
 
 ### Instalación 
