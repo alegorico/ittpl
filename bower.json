@@ -1,0 +1,23 @@
+{
+  "name": "ittpl",
+  "description": "Modelo base para la generacion de vistas basada en la filosofia ITCSS",
+  "main": "",
+  "authors": [
+    "Alejandro G."
+  ],
+  "license": "CC-BY-2.0",
+  "keywords": [
+    "itcss",
+    "pug",
+    "jade"
+  ],
+  "homepage": "https://github.com/alegorico/ittpl",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
